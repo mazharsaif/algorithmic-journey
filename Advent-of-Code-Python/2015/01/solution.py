@@ -13,8 +13,6 @@ def main():
 
     ANS1 = (plus1 - minus1)
 
-    print(f"Answer to Part 1: {ANS1}")
-
 
     ### Part 2
     current_floor = 0
@@ -28,7 +26,12 @@ def main():
             ANS2 = i + 1
             break
 
-    print(f"Answer to Part 2: {ANS2}")
+
+    return ANS1, ANS2
+
 
 if __name__ == "__main__":
-    main()
+    ANS1, ANS2 = main()
+
+    print(f"Answer to Part 1: {ANS1}")
+    print(f"Answer to Part 2: {ANS2}")
